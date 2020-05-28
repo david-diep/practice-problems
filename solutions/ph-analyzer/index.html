@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>PH Analyzer</title>
+</head>
+<styles></styles>
+
+<body>
+  <script>
+    function phAnalyzer(num) {
+      switch (true) {
+        case(num>14||num<1):
+          return "invalid pH value";
+        case (num > 7):
+          return "alkaline";
+        case (num < 7):
+          return "acidic";
+
+        case (num === 7):
+          return "neutral";
+
+
+
+
+      }
+
+    }
+
+  </script>
+</body>
+
+</html>
