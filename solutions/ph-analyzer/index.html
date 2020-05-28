@@ -10,23 +10,20 @@
 <body>
   <script>
     function phAnalyzer(num) {
-      switch (true) {
-        case(num>14||num<1):
+      if(num>14||num<1){
           return "invalid pH value";
-        case (num > 7):
+        }else if (num > 7){
           return "alkaline";
-        case (num < 7):
+        } else if (num < 7){
           return "acidic";
-
-        case (num === 7):
+        } else if (num === 7){
           return "neutral";
-
-
-
-
+        }
       }
 
-    }
+
+
+
 
   </script>
 </body>
