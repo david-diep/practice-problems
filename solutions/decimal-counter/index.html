@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Decimal Counter</title>
+</head>
+<styles></styles>
+
+<body>
+  <script>
+
+function decimalPlaceCounter(stringNum){
+  if (!stringNum.includes(".")){ //if there is no decimal
+    return 0;
+  } else{
+    return stringNum.split(".")[1].length;
+  }
+
+}
+  console.log("decimalPlaceCounter('127.245'): ", decimalPlaceCounter("127.245"));
+  console.log('decimalPlaceCounter("145"): ', decimalPlaceCounter("145"));
+  console.log('decimalPlaceCounter("23.00"): ', decimalPlaceCounter("23.00"));
+  </script>
+</body>
+
+</html>
