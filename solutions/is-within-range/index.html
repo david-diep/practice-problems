@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<styles></styles>
+
+<body>
+  <script>
+function isWithinRange(num,rangeObj){
+  return rangeObj.min <= num && rangeObj.max >= num;
+}
+
+console.log("isWithinRange(5, {min: 1, max: 9}): ", isWithinRange(5, { min: 1, max: 9 }) );
+console.log("isWithinRange(12, {min:15, max: 29}): ", isWithinRange(12, { min: 15, max: 29 }));
+console.log("isWithinRange(9, {min:0, max: 9}): ", isWithinRange(9, { min: 0, max: 9 }));
+  </script>
+</body>
+
+</html>
