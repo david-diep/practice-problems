@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<styles></styles>
+
+<body>
+  <script>
+
+    function wordBuilder(wordToSpell){
+      var answer = [];
+      var word = "";
+      for(let i = 0;i<wordToSpell.length; i++){
+        word+=wordToSpell.charAt(i);
+        answer.push(word);
+      }
+
+      return answer;
+    }
+    console.log(wordBuilder("JavaScript") );
+    console.log( wordBuilder("Moon"));
+    console.log(wordBuilder("Stars") );
+  </script>
+</body>
+
+</html>
