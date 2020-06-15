@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<styles></styles>
+
+<body>
+  <script>
+function isTheAverageWhole(array){
+  var sum = array.reduce(function(a,b){ // each value in the array is being returned added to another
+    return a + b;
+  },0);
+  var mean = sum/array.length;
+  return mean%1==0;
+}
+console.log(isTheAverageWhole([1, 3, 4, 4]));
+console.log(isTheAverageWhole([3, 4]));
+console.log(isTheAverageWhole([5, 5, 5]));
+
+  </script>
+</body>
+
+</html>
