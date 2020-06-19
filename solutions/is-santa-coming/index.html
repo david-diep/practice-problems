@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Is Santa Coming?</title>
+</head>
+<styles></styles>
+
+<body>
+
+  <script>
+
+    function isSantaComing(date) {
+      return date.getMonth() == 11 && date.getDate() == 24;
+    }
+
+    console.log(isSantaComing(new Date(2001, 11, 24)));
+    console.log(isSantaComing(new Date(2001, 7, 4)));
+    console.log(isSantaComing(new Date(1995, 11, 23, 23, 59, 59)));
+
+  </script>
+
+</body>
+
+</html>
