@@ -10,18 +10,16 @@
 <body>
   <script>
     function dayFinder(stringDate){
-      var splitDate=stringDate.split("/")
-      var date = new Date(parseInt(splitDate[2]), parseInt(splitDate[0])-1, parseInt(splitDate[1]))
-      //console.log(date)
-      var week = {
-        1:"Monday",
-        2:"Tuesday",
-        3:"Wednesday",
-        4:"Thursday",
-        5:"Friday",
-        6:"Saturday",
-        7:"Sunday"
-      }
+      var date = new Date(stringDate)
+      var week = [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ]
       return week[date.getDay()];
     }
     console.log('dayFinder("05/22/1946"): ', dayFinder("05/22/1946"))
