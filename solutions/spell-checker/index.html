@@ -15,7 +15,7 @@
       const answer = [];
       const wrong = [];
       for (let i = 0; i < spellcheck.length; i++) {
-        if (spellcheck[i] === key[i]) {
+        if (key.contains(spellcheck[i])) {
           answer.push(spellcheck[i]);
         } else {
           wrong.push(spellcheck[i]);
